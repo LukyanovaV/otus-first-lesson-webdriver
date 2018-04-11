@@ -13,10 +13,10 @@ public class FirstTest {
 
     @Test
     public void test(){
+
         System.setProperty("webdriver.chrome.driver", "lib\\chrome\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
-
         driver.get("http://blazedemo.com/index.php");
 
         WebElement depCity = driver.findElement(By.xpath("/html/body/div[3]/form/select[1]/option[3]"));
