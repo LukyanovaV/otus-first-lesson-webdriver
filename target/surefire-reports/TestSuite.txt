@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 315.848 s <<< FAILURE! - in TestSuite
+checkBayTicket(tests.SecondTest)  Time elapsed: 44.821 s  <<< FAILURE!
+java.lang.NullPointerException
+	at tests.SecondTest.checkBayTicket(SecondTest.java:173)
+

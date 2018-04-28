@@ -1,5 +1,6 @@
 package tests;
 
+import includes.PassengerData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -9,10 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,35 +18,28 @@ import java.util.concurrent.TimeUnit;
 
 public class SecondTest {
 
-            WebDriver driver;
-
-           public enum Browsers {
-               chrome,
-               firefox
-           }
+             WebDriver driver;
 
 
-            public void SettingBrowser(Browsers browser){
+            @Parameters({"browser"})
+            @BeforeMethod
+            public void SettingBrowser(String browser){
 
-                switch(browser){
-                    case chrome:
-                        System.setProperty("webdriver.chrome.driver", "lib\\chrome\\chromedriver.exe");
-                        driver = new ChromeDriver();
-                        break;
-                    case firefox:
-                        System.setProperty("webdriver.gecko.driver", "lib\\firefox\\geckodriver.exe");
-                        driver = new FirefoxDriver();
-                        break;
+                if (driver == null) {
+                    switch (browser) {
+                        case "Chrome":
+                            driver = new ChromeDriver();
+                            break;
+                        case "Firefox":
+                            driver = new FirefoxDriver();
+                            break;
 
-                    default:
+                        default: throw new IllegalStateException("Browser isn't correct!");
+                    }
                 }
 
             }
 
-            @BeforeClass
-            public void precondition(){
-
-            }
 
             @BeforeTest
             public void initialization(){
@@ -73,8 +64,6 @@ public class SecondTest {
                 String departsWord;
                 String arriveWord;
 
-                for(Browsers browser : Browsers.values()){
-                    SettingBrowser(browser);
 
                     driver.get("http://blazedemo.com/index.php");
                     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -124,14 +113,12 @@ public class SecondTest {
 
                 }
 
-            }
+
 
             @Test
             public void checkBayTicket(){
 
-                for(Browsers browser : Browsers.values()) {
 
-                    SettingBrowser(browser);
 
                     driver.get("http://blazedemo.com/index.php");
 
@@ -182,32 +169,10 @@ public class SecondTest {
                          }
 
                         //Заполнение формы
-                        WebElement inputName = driver.findElement(By.xpath("//input[@name='inputName']"));
-                        WebElement inputAddress = driver.findElement(By.xpath("//input[@name='address']"));
-                        WebElement inputCity = driver.findElement(By.xpath("//input[@name='city']"));
-                        WebElement inputState = driver.findElement(By.xpath("//input[@name='state']"));
-                        WebElement inputZipCode = driver.findElement(By.xpath("//input[@name='zipCode']"));
-                        WebElement inputCardType = driver.findElement(By.xpath("//select[@name='cardType']"));
-                        WebElement inputCardNumber = driver.findElement(By.xpath("//input[@name='creditCardNumber']"));
-                        WebElement inputNameOnCard = driver.findElement(By.xpath("//input[@name='nameOnCard']"));
-                        WebElement inputFlight = driver.findElement(By.xpath("//input[@value='Purchase Flight']"));
+                        PassengerData passengerData = new PassengerData(driver);
+                        passengerData.TypeInputs("Name", "Street", "City", "State", "1233456789", "3456678", "122334450", "NameCard");
 
-                        inputName.clear();
-                        inputName.sendKeys("11232343**");
-                        inputAddress.clear();
-                        inputAddress.sendKeys("+++++");
-                        inputCity.clear();
-                        inputCity.sendKeys("--------");
-                        inputState.clear();
-                        inputState.sendKeys("!!!!!!");
-                        inputZipCode.clear();
-                        inputZipCode.sendKeys("000000");
-                        inputCardNumber.clear();
-                        inputCardNumber.sendKeys("00000000");
-                        inputNameOnCard.clear();
-                        inputNameOnCard.sendKeys("---------");
 
-                        inputFlight.click();
 
                         WebElement id = driver.findElement(By.xpath("//tr[1]/td[2]"));
                         WebElement status = driver.findElement(By.xpath("//tr[2]/td[2]"));
@@ -232,5 +197,5 @@ public class SecondTest {
 
                 }
 
-            }
+            //}
 

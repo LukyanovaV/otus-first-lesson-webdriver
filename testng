@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Chrome" verbose="1" >
+    <test name="Testing in Chrome" >
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <!--class name="tests.FirstTest" /-->
+            <class name="tests.SecondTest"/>
+        </classes>
+        <!--packages>
+      <package name="tests" />
+   </packages-->
+
+    </test>
+</suite>
