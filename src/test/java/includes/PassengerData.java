@@ -3,6 +3,7 @@ package includes;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class PassengerData {
    // By inputName = By.xpath("//input[@name='inputName']");
@@ -11,8 +12,9 @@ public class PassengerData {
                         WebElement inputNameOnCard = driver.findElement(By.xpath("//input[@name='nameOnCard']"));
                         WebElement inputFlight = driver.findElement(By.xpath("//input[@value='Purchase Flight']"));
                         */
-    @FindBy(xpath = "//input[@name='inputName']")
+    @FindBy(xpath = "//*[@id='inputName']")
     WebElement inputName;
+    //*[@id="inputName"]
 
     @FindBy(xpath="//input[@name='address']")
     WebElement inputAddress;
@@ -26,8 +28,6 @@ public class PassengerData {
     @FindBy(xpath="//input[@name='zipCode']")
     WebElement inputZipCode;
 
-    @FindBy(xpath = "//select[@name='cardType']")
-    WebElement inputCardType;
 
     @FindBy(xpath = "//input[@name='creditCardNumber']")
     WebElement inputCreditCardNum;
@@ -44,6 +44,7 @@ public class PassengerData {
 
     public PassengerData(WebDriver driver){
         this.driver = driver;
+        PageFactory.initElements(driver, this);
 
     }
 
@@ -52,7 +53,6 @@ public class PassengerData {
                            String city,
                            String state,
                            String zipCode,
-                           String creditCardType,
                            String creditCardNum,
                            String nameOnCreditCard
                            ){
@@ -66,8 +66,6 @@ public class PassengerData {
           inputState.sendKeys(state);
           inputZipCode.clear();
           inputZipCode.sendKeys(zipCode);
-          inputCardType.clear();
-          inputCardType.sendKeys(creditCardType);
           inputCreditCardNum.clear();
           inputCreditCardNum.sendKeys(creditCardNum);
           inputNameOnCard.clear();

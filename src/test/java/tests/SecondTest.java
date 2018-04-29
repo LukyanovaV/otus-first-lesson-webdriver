@@ -25,10 +25,11 @@ public class SecondTest {
             @BeforeMethod
             public void SettingBrowser(String browser){
 
-                if (driver == null) {
+
                     switch (browser) {
                         case "Chrome":
                             driver = new ChromeDriver();
+                            driver.get("http://blazedemo.com/index.php");
                             break;
                         case "Firefox":
                             driver = new FirefoxDriver();
@@ -36,25 +37,16 @@ public class SecondTest {
 
                         default: throw new IllegalStateException("Browser isn't correct!");
                     }
-                }
+
 
             }
 
 
-            @BeforeTest
-            public void initialization(){
-               //System.setProperty("webdriver.chrome.driver", "lib\\chrome\\chromedriver.exe");
-                // driver = new ChromeDriver();
-
-            }
-
-            @AfterTest
+            @AfterMethod
             public void reset(){
-   //             if(driver.getWindowHandles().size()>1) {
-   //                 driver.quit();
-   //             }else {
-   //                 driver.close();
-   //             }
+                if(driver != null ) {
+                    driver.quit();
+                }
            }
 
 
@@ -65,7 +57,6 @@ public class SecondTest {
                 String arriveWord;
 
 
-                    driver.get("http://blazedemo.com/index.php");
                     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
                     int i = 1;
@@ -119,9 +110,6 @@ public class SecondTest {
             public void checkBayTicket(){
 
 
-
-                    driver.get("http://blazedemo.com/index.php");
-
                     WebElement depCity = driver.findElement(By.xpath("//select[1]/option[4]"));
                     WebElement findFlightsButton = driver.findElement(By.xpath("//div[3]/form/div/input"));
                     WebElement desCity = driver.findElement(By.xpath("//select[2]/option[3]"));
@@ -170,7 +158,7 @@ public class SecondTest {
 
                         //Заполнение формы
                         PassengerData passengerData = new PassengerData(driver);
-                        passengerData.TypeInputs("Name", "Street", "City", "State", "1233456789", "3456678", "122334450", "NameCard");
+                        passengerData.TypeInputs("Name", "Street", "City", "State", "1233456789",  "122334450", "NameCard");
 
 
 
@@ -188,7 +176,7 @@ public class SecondTest {
                         driver.navigate().back();
                         }
 
-                    driver.quit();
+
                     }
 
 

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Chrome">
-              <span class="suite-name border-failed">Chrome</span>
+              <span class="suite-name border-passed">Chrome</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Chrome">
-                    <span>D:\otus-first-lesson-webdriver-master\otus-first-lesson-webdriver\testng</span>
+                    <span>C:\Users\bondarenko\IdeaProjects\firsttest\testng</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Chrome" class="hide-methods failed suite-Chrome"> (hide)</a> <!-- hide-methods failed suite-Chrome -->
-                      <a href="#" panel-name="suite-Chrome" class="show-methods failed suite-Chrome"> (show)</a> <!-- show-methods failed suite-Chrome -->
-                    </span>
-                    <div class="method-list-content failed suite-Chrome">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="tests.SecondTest" hash-for-method="checkBayTicket">checkBayTicket</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Chrome -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +100,11 @@
                       <a href="#" panel-name="suite-Chrome" class="show-methods passed suite-Chrome"> (show)</a> <!-- show-methods passed suite-Chrome -->
                     </span>
                     <div class="method-list-content passed suite-Chrome">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="tests.SecondTest" hash-for-method="checkBayTicket">checkBayTicket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="tests.SecondTest" hash-for-method="checkingCities">checkingCities</a> <!-- method navigator-link -->
@@ -131,9 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Chrome" class="panel Chrome">
-          <div class="suite-Chrome-class-failed">
+          <div class="suite-Chrome-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tests.SecondTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -142,21 +133,8 @@
                   <a name="checkBayTicket">
                   </a> <!-- checkBayTicket -->
                   <span class="method-name">checkBayTicket</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at includes.PassengerData.TypeInputs(PassengerData.java:59)
-	at tests.SecondTest.checkBayTicket(SecondTest.java:173)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Chrome-class-failed -->
-          <div class="suite-Chrome-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.SecondTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="checkingCities">
@@ -169,7 +147,7 @@
         </div> <!-- panel Chrome -->
         <div panel-name="test-xml-Chrome" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\otus-first-lesson-webdriver-master\otus-first-lesson-webdriver\testng</span>
+            <span class="header-content">C:\Users\bondarenko\IdeaProjects\firsttest\testng</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -223,16 +201,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkingCities')
 data.setCell(0, 2, 'tests.SecondTest')
-data.setCell(0, 3, 266796);
+data.setCell(0, 3, 115036);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'checkBayTicket')
 data.setCell(1, 2, 'tests.SecondTest')
-data.setCell(1, 3, 44824);
+data.setCell(1, 3, 22503);
 window.suiteTableData['Chrome']= { tableData: data, tableDiv: 'times-div-Chrome'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Chrome">
               </div> <!-- times-div-Chrome -->
             </div> <!-- times-div -->
@@ -259,32 +237,30 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SecondTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialization</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">SettingBrowser(Chrome)</span>
-                <span class="method-start">16 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">checkBayTicket</span>
-                <span class="method-start">3720 ms</span>
+                <span class="method-start">19929 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reset</span>
+                <span class="method-start">42433 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SettingBrowser(Chrome)</span>
-                <span class="method-start">48544 ms</span>
+                <span class="method-start">43144 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkingCities</span>
-                <span class="method-start">48544 ms</span>
+                <span class="method-start">69848 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="configuration-method after">
                 <span class="method-name">reset</span>
-                <span class="method-start">315343 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">184885 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

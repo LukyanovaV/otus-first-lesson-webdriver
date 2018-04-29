@@ -7,9 +7,6 @@
             <!--class name="tests.FirstTest" /-->
             <class name="tests.SecondTest"/>
         </classes>
-        <!--packages>
-      <package name="tests" />
-   </packages-->
 
     </test>
 </suite>
