@@ -1,12 +1,11 @@
 package tests;
 
 import includes.PassengerData;
+import includes.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -25,24 +24,15 @@ public class SecondTest {
             @BeforeMethod
             public void SettingBrowser(String browser){
 
-
-                    switch (browser) {
-                        case "Chrome":
-                            driver = new ChromeDriver();
-                            driver.get("http://blazedemo.com/index.php");
-                            break;
-                        case "Firefox":
-                            driver = new FirefoxDriver();
-                            break;
-
-                        default: throw new IllegalStateException("Browser isn't correct!");
-                    }
-
+                WebDriverManager webDriverManager = new WebDriverManager();
+                webDriverManager.GetBrowser(browser);
+                driver = webDriverManager.getInstance();
+                driver.get("http://blazedemo.com/index.php");
 
             }
 
 
-            @AfterMethod
+            @AfterSuite
             public void reset(){
                 if(driver != null ) {
                     driver.quit();
@@ -52,6 +42,7 @@ public class SecondTest {
 
             @Test
             public void checkingCities(){
+
 
                 String departsWord;
                 String arriveWord;
@@ -185,5 +176,5 @@ public class SecondTest {
 
                 }
 
-            //}
+
 
