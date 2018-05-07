@@ -30,7 +30,8 @@ public class WebDriverManager {
                 break;
 
             default:
-                throw new IllegalStateException("Browser isn't correct!");
+               // throw new IllegalStateException("Browser isn't correct!");
+                driver = new ChromeDriver();
         }
         return driver;
     }

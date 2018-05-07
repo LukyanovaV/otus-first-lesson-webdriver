@@ -1,12 +1,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Chrome" verbose="1" >
+<parameter name="browser" value="Chrome"/>
     <test name="Testing in Chrome" >
-        <parameter name="browser" value="Chrome"/>
         <classes>
             <!--class name="tests.FirstTest" /-->
             <class name="tests.SecondTest"/>
         </classes>
 
+    </test>
+    <test name="Login Page Test">
+      <parameter name="login" value="Wrong@mail.com"/>
+      <parameter name="password" value="12345679"/>
+        <classes>
+            <class name="test.LoginPageTest"/>
+                <methods>
+                    <include name="loginPageTest"/>
+                </methods>
     </test>
 </suite>

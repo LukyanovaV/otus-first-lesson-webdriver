@@ -14,7 +14,6 @@ public class PassengerData {
                         */
     @FindBy(xpath = "//*[@id='inputName']")
     WebElement inputName;
-    //*[@id="inputName"]
 
     @FindBy(xpath="//input[@name='address']")
     WebElement inputAddress;
@@ -47,6 +46,73 @@ public class PassengerData {
         PageFactory.initElements(driver, this);
 
     }
+  /*  public class Builder{
+        String inputName;
+
+        String inputAddress;
+
+        String inputCity;
+
+        String inputState;
+
+        String inputZipCode;
+
+        String inputCreditCardNum;
+
+        String inputNameOnCard;
+
+        String buttonPurchFlight;
+
+
+        private  WebDriver driver;
+
+        public Builder(WebDriver driver){
+            this.driver = driver;
+        }
+
+        public  Builder InputPassengerName(String passengerName){
+            inputName = passengerName;
+            return this;
+        }
+
+        public Builder InputAdress(String address){
+            inputName.clear();
+            inputName.sendKeys(address);
+        }
+
+        public void InputCity(String city) {
+            inputCity.clear();
+            inputCity.sendKeys(city);
+        }
+
+        public void InputState(String state) {
+            inputState.clear();
+            inputState.sendKeys(state);
+        }
+
+        public void InputZipCode(String zipCode) {
+            inputZipCode.clear();
+            inputZipCode.sendKeys(zipCode);
+        }
+
+        public void InputCreditCardNum(String creditCardNum) {
+            inputCreditCardNum.clear();
+            inputCreditCardNum.sendKeys(creditCardNum);
+        }
+
+        public void InputNameonCreditCard(String nameOnCreditCard) {
+            inputNameOnCard.clear();
+            inputNameOnCard.sendKeys(nameOnCreditCard);
+        }
+
+        public PassengerData build(){
+            return new PassengerData(this.driver);
+        }
+    }
+
+    private PassengerData(Builder builder){
+        inputName.sendKeys(builder.InputPassengerName);
+    }*/
 
     public void TypeInputs(String passengerName,
                            String address,
