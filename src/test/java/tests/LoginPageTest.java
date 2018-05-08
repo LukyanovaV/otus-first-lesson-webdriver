@@ -2,12 +2,10 @@ package tests;
 
 import includes.LoginPage;
 import includes.WebDriverManager;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class LoginPageTest {
 
@@ -26,18 +24,26 @@ public class LoginPageTest {
 
    }
 
-   @Parameters({"login","password"})
    @Test
    public void loginPageTest(){
        LoginPage loginPage = new LoginPage(driver);
-       loginPage.enterEmail(login);
-       loginPage.enterPassword(password);
-       loginPage.clickLoginBtn();
-       Assert.assertEquals(loginPage.wrongMessage(),"These credentials do not match our records.");
+       loginPage.enterEmail("Wrong@mail.com");
+       loginPage.enterPassword("12345679");
+       Dimension beforeSize = loginPage.getSizeOfLoginBtn();
+       loginPage.moveMouseToLoginBtn();
+       Dimension afterSize = loginPage.getSizeOfLoginBtn();
+       Assert.assertEquals(beforeSize, afterSize);
+       Assert.assertEquals(loginPage.getColorOfLoginBtn(),"rgba(37, 121, 169, 1)");
+
 
    }
 
-
+    @AfterMethod
+    public void reset(){
+        if(driver != null ) {
+            driver.quit();
+        }
+    }
 
 
 

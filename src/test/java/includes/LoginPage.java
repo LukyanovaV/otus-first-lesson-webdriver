@@ -1,16 +1,18 @@
 package includes;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    @FindBy(xpath = "//*[@id='email]")
+    @FindBy(xpath = "//input[@id='email']")
     WebElement eMailInput;
 
-    @FindBy(xpath = "//*[@id='password']")
+    @FindBy(xpath = "//input[@id='password']")
     WebElement passwordInput;
 
     @FindBy(xpath = "//*[@class='btn btn-primary']")
@@ -43,6 +45,21 @@ public class LoginPage {
                 passwordInput.sendKeys(password);
                 return this;
             }
+
+            public void moveMouseToLoginBtn(){
+                Actions actions = new Actions(driver);
+                actions.moveToElement(loginBtn).build().perform();
+            }
+
+            public Dimension getSizeOfLoginBtn(){
+                return loginBtn.getSize();
+            }
+
+            public String getColorOfLoginBtn(){
+                String colorOfLoginBtn =loginBtn.getCssValue("background-color");
+                return colorOfLoginBtn;
+            }
+
 
             public void clickRememberBtn(){
                 rememberMeBtn.click();
