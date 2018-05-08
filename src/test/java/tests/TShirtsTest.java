@@ -30,8 +30,6 @@ public class TShirtsTest {
 
     @AfterMethod
     public void reset(){
-        if(driver != null ) {
             driver.quit();
-        }
     }
 }
