@@ -28,6 +28,7 @@
                     <systemPropertyVariables>
                         <webdriver.chrome.driver>${webdriver.chrome}</webdriver.chrome.driver>
                         <webdriver.gecko.driver>${webdriver.gecko}</webdriver.gecko.driver>
+                        <webdriver.ie.driver>lib/iexplorer/IEDriverServer.exe</webdriver.ie.driver>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

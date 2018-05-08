@@ -2,7 +2,9 @@ package includes;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class WebDriverManager {
     private static String browser;
@@ -23,15 +25,20 @@ public class WebDriverManager {
     private static   WebDriver WebDriverStart() {
         switch (browser) {
             case "Chrome":
-                driver = new ChromeDriver();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless");
+                driver = new ChromeDriver(chromeOptions);
                 break;
             case "Firefox":
                 driver = new FirefoxDriver();
                 break;
-
+            case "IExplorer":
+                driver = new InternetExplorerDriver();
+                break;
             default:
                // throw new IllegalStateException("Browser isn't correct!");
-                driver = new ChromeDriver();
+                driver = new InternetExplorerDriver();
+
         }
         return driver;
     }
