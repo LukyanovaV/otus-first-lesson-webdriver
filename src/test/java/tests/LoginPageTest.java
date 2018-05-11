@@ -18,7 +18,7 @@ public class LoginPageTest {
    @BeforeMethod
    public void settingBrowser(@Optional("browser") String browser){
 
-       WebDriverManager webDriverManager = new WebDriverManager();
+       WebDriverManager webDriverManager = new WebDriverManager(driver);
        webDriverManager.GetBrowser(browser);
        driver = webDriverManager.getInstance();
 

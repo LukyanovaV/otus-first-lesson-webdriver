@@ -1,30 +1,15 @@
 package tests;
 
-import includes.PassengerData;
-import includes.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 public class SecondTest {
 
-             WebDriver driver;
+             /*WebDriver driver;
 
 
             @Parameters({"browser"})
             @BeforeMethod
             public void SettingBrowser(String browser){
 
-                WebDriverManager webDriverManager = new WebDriverManager();
+                WebDriverManager webDriverManager = new WebDriverManager(driver);
                 webDriverManager.GetBrowser(browser);
                 driver = webDriverManager.getInstance();
                 driver.get("http://blazedemo.com/index.php");
@@ -149,6 +134,7 @@ public class SecondTest {
 
                         //Заполнение формы
                         PassengerData passengerData = new PassengerData(driver);
+                       // PassengerData passengerData = new PassengerData(driver);
                         passengerData.TypeInputs("Name", "Street", "City", "State", "1233456789",  "122334450", "NameCard");
 
 
@@ -172,7 +158,7 @@ public class SecondTest {
 
 
 
-
+*/
 
                 }
 

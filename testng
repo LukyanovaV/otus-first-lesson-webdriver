@@ -1,21 +1,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Chrome" verbose="1" >
-<parameter name="browser" value="Chrome"/>
+<suite name="ParallelTest" parallel="tests" thread-count="2">
+
     <test name="Testing in Chrome" >
+    <parameter name="browser" value="Chrome-remote"/>
         <classes>
             <!--class name="tests.FirstTest" /-->
-            <class name="tests.SecondTest"/>
+            <class name="tests.TShirtsTest"/>
         </classes>
 
     </test>
-    <test name="Login Page Test">
-      <parameter name="login" value="Wrong@mail.com"/>
-      <parameter name="password" value="12345679"/>
-        <classes>
-            <class name="test.LoginPageTest"/>
-                <methods>
-                    <include name="loginPageTest"/>
-                </methods>
-    </test>
+        <test name="Testing in FF" >
+        <parameter name="browser" value="Firefox-remote"/>
+            <classes>
+                <class name="tests.TShirtsTest"/>
+            </classes>
+
+        </test>
+
 </suite>

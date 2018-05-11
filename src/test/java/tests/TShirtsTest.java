@@ -8,13 +8,13 @@ import org.testng.annotations.*;
 
 public class TShirtsTest {
 
-    static WebDriver driver;
+   public WebDriver driver;
 
     @Parameters("browser")
-    @BeforeMethod
+    @BeforeTest
     public void settingBrowser(@Optional("browser") String browser){
 
-        WebDriverManager webDriverManager = new WebDriverManager();
+        WebDriverManager webDriverManager = new WebDriverManager(driver);
         webDriverManager.GetBrowser(browser);
         driver = webDriverManager.getInstance();
 
@@ -25,6 +25,7 @@ public class TShirtsTest {
         HomePage homePage = new HomePage(driver);
         homePage.chooseTshirtsMenu();
         Assert.assertEquals(driver.getCurrentUrl(), "http://automationpractice.com/index.php?id_category=5&controller=category");
+
 
     }
 
