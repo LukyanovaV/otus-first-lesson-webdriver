@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Chrome">
-              <span class="suite-name border-passed">Chrome</span>
+            <a href="#" class="navigator-link" panel-name="suite-ParallelTest">
+              <span class="suite-name border-skipped">ParallelTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Chrome">
+                  <a href="#" class="navigator-link " panel-name="test-xml-ParallelTest">
                     <span>C:\Users\bondarenko\IdeaProjects\firsttest\testng</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Chrome">
+                  <a href="#" class="navigator-link " panel-name="testlist-ParallelTest">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Chrome">
+                  <a href="#" class="navigator-link " panel-name="group-ParallelTest">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Chrome">
+                  <a href="#" class="navigator-link " panel-name="times-ParallelTest">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Chrome">
+                  <a href="#" class="navigator-link " panel-name="reporter-ParallelTest">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Chrome">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-ParallelTest">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Chrome">
+                  <a href="#" class="navigator-link " panel-name="chronological-ParallelTest">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,26 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Chrome" class="hide-methods passed suite-Chrome"> (hide)</a> <!-- hide-methods passed suite-Chrome -->
-                      <a href="#" panel-name="suite-Chrome" class="show-methods passed suite-Chrome"> (show)</a> <!-- show-methods passed suite-Chrome -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-ParallelTest" class="hide-methods skipped suite-ParallelTest"> (hide)</a> <!-- hide-methods skipped suite-ParallelTest -->
+                      <a href="#" panel-name="suite-ParallelTest" class="show-methods skipped suite-ParallelTest"> (show)</a> <!-- show-methods skipped suite-ParallelTest -->
                     </span>
-                    <div class="method-list-content passed suite-Chrome">
+                    <div class="method-list-content skipped suite-ParallelTest">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="tests.SecondTest" hash-for-method="checkBayTicket">checkBayTicket</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ParallelTest" title="tests.TShirtsTest" hash-for-method="tShirtsTest">tShirtsTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="tests.SecondTest" hash-for-method="checkingCities">checkingCities</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Chrome -->
+                    </div> <!-- method-list-content skipped suite-ParallelTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,31 +116,74 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Chrome" class="panel Chrome">
-          <div class="suite-Chrome-class-passed">
+        <div panel-name="suite-ParallelTest" class="panel ParallelTest">
+          <div class="suite-ParallelTest-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.SecondTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">tests.TShirtsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkBayTicket">
-                  </a> <!-- checkBayTicket -->
-                  <span class="method-name">checkBayTicket</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkingCities">
-                  </a> <!-- checkingCities -->
-                  <span class="method-name">checkingCities</span>
+                  <a name="tShirtsTest">
+                  </a> <!-- tShirtsTest -->
+                  <span class="method-name">tShirtsTest</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;BONDARENKO&apos;, ip: &apos;172.20.1.75&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:566)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:145)
+	at includes.WebDriverManager.WebDriverStart(WebDriverManager.java:44)
+	at includes.WebDriverManager.getInstance(WebDriverManager.java:29)
+	at tests.TShirtsTest.settingBrowser(TShirtsTest.java:18)
+Caused by: java.net.ConnectException: Failed to connect to /172.20.1.75:3278
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	... 34 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+	... 56 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Chrome-class-passed -->
-        </div> <!-- panel Chrome -->
-        <div panel-name="test-xml-Chrome" class="panel">
+          </div> <!-- suite-ParallelTest-class-skipped -->
+        </div> <!-- panel ParallelTest -->
+        <div panel-name="test-xml-ParallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">C:\Users\bondarenko\IdeaProjects\firsttest\testng</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -153,20 +191,20 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Chrome&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;ParallelTest&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Testing in Chrome&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome-remote&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.SecondTest&quot;/&gt;
+      &lt;class name=&quot;tests.TShirtsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Testing in Chrome --&gt;
-&lt;/suite&gt; &lt;!-- Chrome --&gt;
+&lt;/suite&gt; &lt;!-- ParallelTest --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Chrome" class="panel">
+        <div panel-name="testlist-ParallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Chrome</span>
+            <span class="header-content">Tests for ParallelTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
@@ -176,91 +214,73 @@
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Chrome" class="panel">
+        <div panel-name="group-ParallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Chrome</span>
+            <span class="header-content">Groups for ParallelTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Chrome" class="panel">
+        <div panel-name="times-ParallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Chrome</span>
+            <span class="header-content">Times for ParallelTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Chrome');
-function tableData_Chrome() {
+suiteTableInitFunctions.push('tableData_ParallelTest');
+function tableData_ParallelTest() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkingCities')
-data.setCell(0, 2, 'tests.SecondTest')
-data.setCell(0, 3, 115036);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkBayTicket')
-data.setCell(1, 2, 'tests.SecondTest')
-data.setCell(1, 3, 22503);
-window.suiteTableData['Chrome']= { tableData: data, tableDiv: 'times-div-Chrome'}
+data.setCell(0, 1, 'tShirtsTest')
+data.setCell(0, 2, 'tests.TShirtsTest')
+data.setCell(0, 3, 0);
+window.suiteTableData['ParallelTest']= { tableData: data, tableDiv: 'times-div-ParallelTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
-              <div id="times-div-Chrome">
-              </div> <!-- times-div-Chrome -->
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-ParallelTest">
+              </div> <!-- times-div-ParallelTest -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Chrome" class="panel">
+        <div panel-name="reporter-ParallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Chrome</span>
+            <span class="header-content">Reporter output for ParallelTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Chrome" class="panel">
+        <div panel-name="ignored-methods-ParallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Chrome" class="panel">
+        <div panel-name="chronological-ParallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.SecondTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">SettingBrowser(Chrome)</span>
+              <div class="chronological-class-name">tests.TShirtsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tShirtsTest</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkBayTicket</span>
-                <span class="method-start">19929 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">reset</span>
-                <span class="method-start">42433 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">SettingBrowser(Chrome)</span>
-                <span class="method-start">43144 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkingCities</span>
-                <span class="method-start">69848 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">reset</span>
-                <span class="method-start">184885 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">settingBrowser(Chrome-remote)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

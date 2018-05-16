@@ -22,18 +22,15 @@ public class WebDriverManager {
 
     }
 
-    public WebDriver getInstance(){
+    public WebDriver getInstance(String browser){
+        this.browser = browser;
         if(driver == null){
+
         driver = WebDriverStart();
     }
     return driver;
 }
 
-    public String GetBrowser(String browser){
-
-        this.browser = browser;
-        return this.browser;
-    }
 
     private static   WebDriver WebDriverStart() {
         switch (browser) {
@@ -66,11 +63,7 @@ public class WebDriverManager {
                // driver = new InternetExplorerDriver();
                 break;
             default:
-                try {
-                    driver = new RemoteWebDriver(new URL(nodeURL), DesiredCapabilities.chrome());
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                }
+               driver = new ChromeDriver();
 
         }
 

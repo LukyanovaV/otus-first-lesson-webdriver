@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="ParallelTest" parallel="tests" thread-count="2">
+<suite name="ParallelTest" >
 
     <test name="Testing in Chrome" >
     <parameter name="browser" value="Chrome-remote"/>
@@ -8,14 +8,6 @@
             <!--class name="tests.FirstTest" /-->
             <class name="tests.TShirtsTest"/>
         </classes>
-
-    </test>
-        <test name="Testing in FF" >
-        <parameter name="browser" value="Firefox-remote"/>
-            <classes>
-                <class name="tests.TShirtsTest"/>
-            </classes>
-
-        </test>
+</test>
 
 </suite>

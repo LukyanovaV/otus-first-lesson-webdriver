@@ -15,8 +15,7 @@ public class TShirtsTest {
     public void settingBrowser(@Optional("browser") String browser){
 
         WebDriverManager webDriverManager = new WebDriverManager(driver);
-        webDriverManager.GetBrowser(browser);
-        driver = webDriverManager.getInstance();
+        driver = webDriverManager.getInstance(browser);
 
     }
 

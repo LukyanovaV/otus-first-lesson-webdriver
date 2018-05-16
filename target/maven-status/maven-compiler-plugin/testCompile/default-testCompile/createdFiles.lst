@@ -1,3 +1,10 @@
-tests\FirstTest.class
+tests\TshirtCucumberTest.class
 includes\PassengerData.class
+tests\LoginPageTest.class
+includes\LoginPage.class
+includes\WebDriverManager.class
+tests\RunnerTest.class
 tests\SecondTest.class
+objects\HomePage.class
+tests\FirstTest.class
+tests\TShirtsTest.class

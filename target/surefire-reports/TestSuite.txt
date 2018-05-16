@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 185.965 s - in TestSuite
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 7.614 s <<< FAILURE! - in TestSuite
+settingBrowser(tests.TShirtsTest)  Time elapsed: 6.745 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'BONDARENKO', ip: '172.20.1.75', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+	at tests.TShirtsTest.settingBrowser(TShirtsTest.java:18)
+Caused by: java.net.ConnectException: Failed to connect to /172.20.1.75:3278
+	at tests.TShirtsTest.settingBrowser(TShirtsTest.java:18)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at tests.TShirtsTest.settingBrowser(TShirtsTest.java:18)
+
