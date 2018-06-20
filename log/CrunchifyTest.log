@@ -1,0 +1,9 @@
+2018-06-20 14:07:25 [main] INFO  WebDriverLogger:40 - WebDriver was navigated to http://automationpractice.com/index.php.
+2018-06-20 14:07:25 [main] ERROR WebDriverLogger:129 - Exception occured at actions
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'BONDARENKO', ip: '172.20.1.75', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_172'
+Driver info: driver.version: EventFiringWebDriver
+2018-06-20 14:07:25 [main] INFO  WebDriverLogger:82 - By.xpath: //li/a[@title='Women'] element was found.
+2018-06-20 14:07:25 [main] INFO  WebDriverLogger:82 - By.xpath: //li/a[@title='T-shirts'] element was found.
+2018-06-20 14:07:25 [main] INFO  WebDriverLogger:82 - By.xpath: //li/a[@title='T-shirts'] element was found.
+2018-06-20 14:07:25 [main] INFO  WebDriverLogger:89 - WebDriver click on element - T-shirts

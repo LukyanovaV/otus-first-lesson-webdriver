@@ -1,5 +1,6 @@
 tests\TshirtCucumberTest.class
 includes\PassengerData.class
+includes\WebDriverLogger.class
 tests\LoginPageTest.class
 includes\LoginPage.class
 includes\WebDriverManager.class

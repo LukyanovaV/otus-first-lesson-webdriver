@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class HomePage {
 
@@ -21,6 +22,7 @@ public class HomePage {
     public HomePage(WebDriver driver){
         this.driver = driver;
         driver.get("http://automationpractice.com/index.php");
+
         PageFactory.initElements(driver, this);
 
     }
@@ -31,6 +33,8 @@ public class HomePage {
         actions.moveToElement(womenMenu).build().perform();
         WebElement tshirtsMenu =(new WebDriverWait(driver, 10)).until(ExpectedConditions.elementToBeClickable(tshirtsMenuAdress));
         tshirtsMenu.click();
+        Assert.assertEquals(driver.getCurrentUrl(), "http://automationpractice.com/index.php?id_category=5&controller=category");
+
     }
 
 
