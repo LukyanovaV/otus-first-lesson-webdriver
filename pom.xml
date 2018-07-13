@@ -28,7 +28,7 @@
                     <systemPropertyVariables>
                         <webdriver.chrome.driver>${webdriver.chrome}</webdriver.chrome.driver>
                         <webdriver.gecko.driver>${webdriver.gecko}</webdriver.gecko.driver>
-                        <webdriver.ie.driver>lib/iexplorer/IEDriverServer.exe</webdriver.ie.driver>
+                        <webdriver.ie.driver>${webdriver.ie}</webdriver.ie.driver>
                     </systemPropertyVariables>
                     <testFailureIgnore>false</testFailureIgnore>
                     <argLine>
@@ -150,12 +150,32 @@
             <version>1.7.21</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-ie-driver</artifactId>
+            <version>3.11.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-core</artifactId>
+            <version>1.9.16</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.fluentlenium</groupId>
+            <artifactId>fluentlenium-core</artifactId>
+            <version>0.10.2</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
     <properties>
         <webdriver.chrome>lib/chrome/chromedriver.exe</webdriver.chrome>
         <webdriver.gecko>lib/firefox/geckodriver.exe</webdriver.gecko>
+        <webdriver.ie>C:\webdrivers\IEDriverServer.exe</webdriver.ie>
+
         <aspectj.version>1.7.4</aspectj.version>
     </properties>
 

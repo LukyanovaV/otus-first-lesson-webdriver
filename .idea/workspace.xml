@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7c0a1a71-9c75-41ef-b392-fac826114362" name="Default" comment="Реализация паттерна Singletone для элемента WebDriver">
-      <change afterPath="$PROJECT_DIR$/src/resources/allure.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/XssLevelOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/CrunchifyTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/CrunchifyTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/includes/PassengerData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/includes/PassengerData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/FirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/FirstTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/SecondTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/SecondTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/includes/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/includes/WebDriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TshirtCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TshirtCucumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng" beforeDir="false" afterPath="$PROJECT_DIR$/testng" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/objects/HomePage.java">
+      <file leaf-file-name="TshirtCucumberTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/TshirtCucumberTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="503">
+              <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,11 +43,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j2.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/log4j2.xml">
+      <file leaf-file-name="SecondTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/SecondTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            <state relative-caret-position="3360">
+              <caret line="160" column="2" selection-start-line="160" selection-start-column="2" selection-end-line="160" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginPageTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginPageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,8 +67,8 @@
       <file leaf-file-name="TShirtsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/TShirtsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="114">
+              <caret line="24" column="66" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testng">
+      <file leaf-file-name="ProtocolHandshake.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.11.0/selenium-remote-driver-3.11.0.jar!/org/openqa/selenium/remote/ProtocolHandshake.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="137">
+              <caret line="186" selection-start-line="186" selection-end-line="186" />
             </state>
           </provider>
         </entry>
@@ -79,29 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="127" column="31" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="allure.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/allure.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RunnerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/RunnerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="126">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,10 +112,24 @@
       <file leaf-file-name="WebDriverManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/includes/WebDriverManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="56" column="31" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="31" />
+            <state relative-caret-position="442">
+              <caret line="126" column="1" lean-forward="true" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XssLevelOneTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/XssLevelOneTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1085#1086#0" expanded="true" />
+                <element signature="e#1106#1107#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,16 +158,18 @@
         <option value="$PROJECT_DIR$/src/test/java/tests/LoginPageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/RunnerTest.java" />
         <option value="$PROJECT_DIR$/src/features/tShirt.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/TshirtCucumberTest.java" />
         <option value="$PROJECT_DIR$/log4j.properties" />
         <option value="$PROJECT_DIR$/src/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/test/java/includes/WebDriverLogger.java" />
         <option value="$PROJECT_DIR$/src/test/java/objects/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/includes/WebDriverManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TShirtsTest.java" />
-        <option value="$PROJECT_DIR$/testng" />
         <option value="$PROJECT_DIR$/src/resources/allure.properties" />
+        <option value="$PROJECT_DIR$/testng" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/TshirtCucumberTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/objects/XssGamePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/includes/WebDriverManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/XssLevelOneTest.java" />
       </list>
     </option>
   </component>
@@ -180,9 +196,9 @@
       </map>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="165" />
-    <option name="y" value="18" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="104" />
+    <option name="y" value="42" />
     <option name="width" value="1681" />
     <option name="height" value="992" />
   </component>
@@ -234,6 +250,30 @@
             </path>
             <path>
               <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -279,7 +319,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TShirtsTest">
+  <component name="RunManager" selected="TestNG.XssLevelOneTest.xssShoudNotWork">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -298,35 +338,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-    </configuration>
-    <configuration name="LoginPageTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="firsttest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginPageTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
     </configuration>
     <configuration name="LoginPageTest.loginPageTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="firsttest" />
@@ -501,6 +512,35 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="XssLevelOneTest.xssShoudNotWork" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="firsttest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.XssLevelOneTest" />
+      <option name="METHOD_NAME" value="xssShoudNotWork" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -527,18 +567,18 @@
       <item itemvalue="TestNG.SecondTest" />
       <item itemvalue="TestNG.SecondTest.checkBayTicket" />
       <item itemvalue="TestNG.LoginPageTest.loginPageTest" />
-      <item itemvalue="TestNG.LoginPageTest" />
       <item itemvalue="TestNG.TShirtsTest.tShirtsTest" />
       <item itemvalue="TestNG.TShirtsTest" />
       <item itemvalue="TestNG.RunnerTest" />
+      <item itemvalue="TestNG.XssLevelOneTest.xssShoudNotWork" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TShirtsTest" />
+        <item itemvalue="TestNG.XssLevelOneTest.xssShoudNotWork" />
         <item itemvalue="TestNG.RunnerTest" />
+        <item itemvalue="TestNG.TShirtsTest" />
         <item itemvalue="TestNG.TShirtsTest.tShirtsTest" />
         <item itemvalue="TestNG.LoginPageTest.loginPageTest" />
-        <item itemvalue="TestNG.LoginPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -628,39 +668,53 @@
       <option name="project" value="LOCAL" />
       <updated>1529493711643</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Добавлен Allure 2 в pom.xml">
+      <created>1530114203114</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1530114203114</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Настройка Allure 2">
+      <created>1530361875493</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1530361875493</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TShirtsTest - 2018.06.27 at 15h 34m 10s.xml">
-      <configuration name="TShirtsTest" configurationId="TestNG" />
+    <history-entry file="XssLevelOneTest_xssShoudNotWork - 2018.07.12 at 15h 25m 17s.xml">
+      <configuration name="XssLevelOneTest.xssShoudNotWork" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TShirtsTest - 2018.06.27 at 15h 36m 01s.xml">
-      <configuration name="TShirtsTest" configurationId="TestNG" />
+    <history-entry file="XssLevelOneTest_xssShoudNotWork - 2018.07.13 at 16h 45m 42s.xml">
+      <configuration name="XssLevelOneTest.xssShoudNotWork" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TShirtsTest - 2018.06.27 at 15h 39m 42s.xml">
-      <configuration name="TShirtsTest" configurationId="TestNG" />
+    <history-entry file="XssLevelOneTest_xssShoudNotWork - 2018.07.13 at 16h 47m 45s.xml">
+      <configuration name="XssLevelOneTest.xssShoudNotWork" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TShirtsTest - 2018.06.27 at 17h 35m 40s.xml">
-      <configuration name="TShirtsTest" configurationId="TestNG" />
+    <history-entry file="XssLevelOneTest_xssShoudNotWork - 2018.07.13 at 16h 49m 20s.xml">
+      <configuration name="XssLevelOneTest.xssShoudNotWork" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TShirtsTest - 2018.06.27 at 17h 39m 39s.xml">
-      <configuration name="TShirtsTest" configurationId="TestNG" />
+    <history-entry file="XssLevelOneTest_xssShoudNotWork - 2018.07.13 at 16h 50m 19s.xml">
+      <configuration name="XssLevelOneTest.xssShoudNotWork" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TShirtsTest - 2018.06.27 at 17h 46m 46s.xml">
-      <configuration name="TShirtsTest" configurationId="TestNG" />
+    <history-entry file="XssLevelOneTest_xssShoudNotWork - 2018.07.13 at 16h 52m 05s.xml">
+      <configuration name="XssLevelOneTest.xssShoudNotWork" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TShirtsTest - 2018.06.27 at 17h 47m 12s.xml">
-      <configuration name="TShirtsTest" configurationId="TestNG" />
+    <history-entry file="XssLevelOneTest_xssShoudNotWork - 2018.07.13 at 17h 05m 23s.xml">
+      <configuration name="XssLevelOneTest.xssShoudNotWork" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TShirtsTest - 2018.06.27 at 17h 49m 58s.xml">
-      <configuration name="TShirtsTest" configurationId="TestNG" />
+    <history-entry file="XssLevelOneTest_xssShoudNotWork - 2018.07.13 at 17h 07m 37s.xml">
+      <configuration name="XssLevelOneTest.xssShoudNotWork" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TShirtsTest - 2018.06.27 at 17h 50m 50s.xml">
-      <configuration name="TShirtsTest" configurationId="TestNG" />
+    <history-entry file="XssLevelOneTest_xssShoudNotWork - 2018.07.13 at 17h 14m 37s.xml">
+      <configuration name="XssLevelOneTest.xssShoudNotWork" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TShirtsTest - 2018.06.27 at 17h 52m 32s.xml">
-      <configuration name="TShirtsTest" configurationId="TestNG" />
+    <history-entry file="XssLevelOneTest_xssShoudNotWork - 2018.07.13 at 17h 18m 58s.xml">
+      <configuration name="XssLevelOneTest.xssShoudNotWork" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -673,28 +727,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="104" y="42" width="1681" height="992" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49785176" weight="0.3287827" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47864583" weight="0.32414553" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47864583" weight="0.32391047" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.47239584" side_tool="true" visible="true" weight="0.32855567" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.47395834" side_tool="true" weight="0.32855567" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.01146789" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49923548" weight="0.329806" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6859375" weight="0.3814774" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.52760416" visible="true" weight="0.32855567" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49895832" weight="0.3296582" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6848958" visible="true" weight="0.4075383" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.5260417" weight="0.30650496" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27916667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32170776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570355" weight="0.39817974" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570355" weight="0.39801544" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -704,29 +759,29 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49864498" weight="0.3299566" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69121623" weight="0.38162544" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32230908" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6848958" visible="true" weight="0.4075383" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.32170776" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49785176" weight="0.3287827" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49923548" weight="0.329806" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49864498" weight="0.3299566" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570355" weight="0.39817974" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570355" weight="0.39801544" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.53061223" visible="true" weight="0.3286219" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.30878377" side_tool="true" weight="0.38162544" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.5260417" weight="0.30650496" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.47395834" side_tool="true" weight="0.32855567" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49895832" weight="0.3296582" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4838883" weight="0.32536975" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47864583" weight="0.32391047" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.01146789" />
       <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
@@ -742,19 +797,24 @@
     <MESSAGE value="Удалено избыточное условие в @AfterMethod" />
     <MESSAGE value="Модификация объектов&#10;- Модификация WebDriverManager.java;&#10;- Настройка testng.xml для параллельного запуска теста." />
     <MESSAGE value="Домашнее задание №11&#10;- Реализован инструментарий Log4J в resources\log4j2.xml и src\test\java\includes\WebDriverLogger.java&#10;- Реализована возможность снимать траффик в includes\WebDriverManager.java&#10;- Реализована возможность снимать скриншот при падении теста в TShirtsTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Домашнее задание №11&#10;- Реализован инструментарий Log4J в resources\log4j2.xml и src\test\java\includes\WebDriverLogger.java&#10;- Реализована возможность снимать траффик в includes\WebDriverManager.java&#10;- Реализована возможность снимать скриншот при падении теста в TShirtsTest.java" />
+    <MESSAGE value="Добавлен Allure 2 в pom.xml" />
+    <MESSAGE value="Настройка Allure 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Настройка Allure 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="34" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/TShirtsTest.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="36" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/22.0/guava-22.0-sources.jar!/com/google/common/collect/Hashing.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/22.0/guava-22.0-sources.jar!/com/google/common/collect/AbstractMapEntry.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/22.0/guava-22.0-sources.jar!/com/google/common/collect/CollectPreconditions.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/22.0/guava-22.0-sources.jar!/com/google/common/collect/ImmutableEntry.java" />
-    <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.11.0/client-combined-3.11.0-sources.jar!/org/openqa/selenium/remote/Command.java" />
     <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.11.0/client-combined-3.11.0-sources.jar!/org/openqa/selenium/remote/http/AbstractHttpCommandCodec.java" />
     <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.11.0/client-combined-3.11.0-sources.jar!/org/openqa/selenium/remote/HttpCommandExecutor.java" />
     <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.11.0/client-combined-3.11.0-sources.jar!/org/openqa/selenium/remote/service/DriverCommandExecutor.java" />
@@ -767,13 +827,6 @@
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.052/FirstTest.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/22.0/guava-22.0-sources.jar!/com/google/common/base/Function.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/FirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/TestNG.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-44">
@@ -839,27 +892,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/firsttest.iml" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/SecondTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3360">
-          <caret line="160" column="2" selection-start-line="160" selection-start-column="2" selection-end-line="160" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/features/tShirt.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TshirtCucumberTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/log4j.properties" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.11.0/log4j-api-2.11.0.jar!/org/apache/logging/log4j/LogManager.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -880,16 +912,6 @@
         <state relative-caret-position="-754" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log/screenshot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -897,43 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2730">
           <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/includes/WebDriverManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/includes/WebDriverLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TShirtsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -954,36 +939,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/site/allure-maven-plugin.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allure-results/66799a25-de45-41d8-b3c1-9046c1f201ec-container.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allure-results/b19e78cd-1c77-4b3f-bccb-b31934096a3e-result.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/RunnerTest.java">
+    <entry file="file://$PROJECT_DIR$/target/site/allure-maven-plugin.html" />
+    <entry file="file://$PROJECT_DIR$/allure-results/66799a25-de45-41d8-b3c1-9046c1f201ec-container.json" />
+    <entry file="file://$PROJECT_DIR$/allure-results/b19e78cd-1c77-4b3f-bccb-b31934096a3e-result.json" />
+    <entry file="file://$PROJECT_DIR$/src/resources/allure.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state>
+          <caret column="32" selection-start-column="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/FirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/features/tShirt.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/jre/lib/rt.jar!/sun/reflect/NativeConstructorAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.11.0/selenium-api-3.11.0.jar!/org/openqa/selenium/MutableCapabilities.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TShirtsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/allure.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TshirtCucumberTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+        <state relative-caret-position="503">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/SecondTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="127" column="31" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
+        <state relative-caret-position="3360">
+          <caret line="160" column="2" selection-start-line="160" selection-start-column="2" selection-end-line="160" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/RunnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/includes/WebDriverLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.11.0/selenium-remote-driver-3.11.0.jar!/org/openqa/selenium/remote/ProtocolHandshake.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/XssGamePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/includes/WebDriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="126" column="1" lean-forward="true" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/XssLevelOneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

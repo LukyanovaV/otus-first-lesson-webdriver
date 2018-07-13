@@ -7,9 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,6 +26,7 @@ public class WebDriverManager {
     private static Proxy proxy;
 
     public static String nodeURL = "http://172.20.1.75:3278/wd/hub";
+    public static String selenoidURL = "http://localhost:4444/wd/hub";
 
 
     public WebDriverManager(WebDriver driver){
@@ -82,11 +86,17 @@ public class WebDriverManager {
                 driver = new FirefoxDriver();
                 break;
             case "IExplorer":
-               // driver = new InternetExplorerDriver();
+                driver = new InternetExplorerDriver();
+                break;
+            case "IExplorer_remote":
+                try {
+                    driver = new RemoteWebDriver(new URL(selenoidURL), DesiredCapabilities.internetExplorer());
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
                 break;
             default:
                driver = new ChromeDriver();
-
         }
 
 
@@ -103,5 +113,15 @@ public class WebDriverManager {
         server.stop();
 
     }
+
+    public boolean isAlertPresent(){
+
+        WebDriverWait wait = new WebDriverWait(driver, 30 /*timeout in seconds*/);
+        if(wait.until(ExpectedConditions.alertIsPresent())==null)
+            return false;
+        else
+            return true;
+    }
+
 
 }

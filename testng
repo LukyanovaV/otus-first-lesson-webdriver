@@ -2,7 +2,7 @@
 
 <suite name="testng">
     <test name="TestingChrome" >
-    <parameter name="browser" value="Chrome_to_HAR"/>
+    <parameter name="browser" value="IExplorer_remote"/>
         <classes>
             <!--class name="tests.FirstTest" /-->
             <class name="tests.TShirtsTest"/>
