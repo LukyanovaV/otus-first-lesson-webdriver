@@ -9,9 +9,14 @@ import org.testng.annotations.*;
 
 public class XssLevelOneTest {
 
-    public static String XSS_QUERY = "?<script>alert(\"1\");</script>";
     WebDriver driver;
     WebDriverManager webDriverManager;
+
+    @DataProvider(name = "XSS_alert")
+    public static Object[] testingData(){
+
+        return new Object[]{"<script>alert(\"1\");</script>"};
+    }
 
 
     @Parameters("browser")
@@ -21,13 +26,13 @@ public class XssLevelOneTest {
         driver = webDriverManager.getInstance(browser);
     }
 
-    @Test
-    public void xssShoudNotWork() {
+    @Test(dataProvider = "XSS_alert" )
+    public void xssShoudNotWork(String xss) {
         driver.get("http://www.xss-game.appspot.com/level1");
         WebElement element = driver.findElement(By.cssSelector("iframe.game-frame"));
 
         driver.switchTo().frame(element);
-        driver.findElement(By.id("query")).sendKeys(XSS_QUERY);
+        driver.findElement(By.id("query")).sendKeys(xss);
         driver.findElement(By.id("button")).click();
 
 
